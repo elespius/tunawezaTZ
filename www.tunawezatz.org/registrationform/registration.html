@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<!-- Mirrored from www.tunawezatz.org/registrationform/registration.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 10 Sep 2025 07:51:34 GMT -->
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>PHP Contact Form To Send Email On Form Submission - reusable form</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" >
+        <script src="../../ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="form.css" >
+        <script src="form.js"></script>
+    </head>
+    <body >
+        <div class="container">
+            <div class="container form-top">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
+                        <div class="panel panel-danger">
+                            <div class="panel-body">
+                                <form id="reused_form">
+                                    <div class="form-group">
+                                        <label >Enter Your Name</label>
+                                        <input type="text" name="name" required class="form-control" placeholder="Enter Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label >Date of Birth</label>
+                                        <input type="text" name="date" required class="form-control" placeholder="Enter date of birth">
+                                    </div>
+									 <div class="form-group">
+                                        <label >Place of birth</label>
+                                        <input type="text" name="place" required class="form-control" placeholder="Enter Place of birth">
+                                    </div>
+									
+									 <div class="form-group">
+                                        <label >Enter Your Email</label>
+                                        <input type="email" name="email" required class="form-control" placeholder="Enter Email">
+                                    </div>
+									
+									 <div class="form-group">
+                                        <label >Enter Your Phone number</label>
+                                        <input type="text" name="phone" required class="form-control" placeholder="Enter Phone Number">
+                                    </div>
+									
+									 <div class="form-group">
+                                        <label >Language spoken</label>
+                                        <input type="text" name="language" required class="form-control" placeholder="Enter Language spoken">
+                                    </div>
+									
+									 <div class="form-group">
+                                        <label >Enter Education level</label>
+                                        <input type="text" name="education" required class="form-control" placeholder="Enter Education level">
+                                    </div>
+									
+									 <div class="form-group">
+                                        <label >Motivation/Interest</label>
+                                        <input type="text" name="motivation" required class="form-control" placeholder="Enter Motivation/Interest">
+                                    </div>
+									
+									<div class="form-group">
+                                        <label >Days of stay</label>
+                                        <input type="text" name="daysofstay" required class="form-control" placeholder="Enter Days of stay">
+                                    </div>
+									<div class="form-group">
+                                        <label >Starting date</label>
+                                        <input type="text" name="startingdate" required class="form-control" placeholder="Enter starting date">
+                                    </div>
+									
+									<div class="form-group">
+                                        <label >Accomodation detail</label>
+                                        <input type="radio" name="accomodation" required class="form-control" value="Family hosting">Family hosting
+										<input type="radio" name="accomodation" required class="form-control" value="Hostel hosting">Hostel hosting
+                                    </div>
+									
+									<div class="form-group">
+                                        <label >Food Financing Plan</label>
+                                        <input type="radio" name="food" required class="form-control" value="Self">Self
+										<input type="radio" name="food" required class="form-control" value="Financed">Financed
+                                    </div>
+									
+									<div class="form-group">
+                                        <label >Fright Financing Plan</label>
+                                        <input type="radio" name="fright" required class="form-control" value="Self">Self
+										<input type="radio" name="fright" required class="form-control" value="Financed">Financed
+                                    </div>
+									
+									<div class="form-group">
+                                        <label >Transport Financing Plan</label>
+                                        <input type="radio" name="transport" required class="form-control" value="Self">Self
+										<input type="radio" name="transport" required class="form-control" value="Financed">Financed
+                                    </div>
+									
+									<div class="form-group">
+                                        <label >Communication Financing Plan</label>
+                                        <input type="radio" name="communication" required class="form-control" value="Self">Self
+										<input type="radio" name="communication" required class="form-control" value="Financed">Financed
+                                    </div>
+									
+									<div class="form-group">
+                                        <label >Language Financing Plan</label>
+                                        <input type="radio" name="languageplan" required class="form-control" value="Self">Self
+										<input type="radio" name="languageplan" required class="form-control" value="Financed">Financed
+                                    </div>
+									
+									<div class="form-group">
+                                        <label >Security Financing Plan</label>
+                                        <input type="radio" name="security" required class="form-control" value="Self">Self
+										<input type="radio" name="security" required class="form-control" value="Financed">Financed
+                                    </div>
+									
+									<div class="form-group">
+                                        <label >Accomodation Financing Plan</label>
+                                        <input type="radio" name="accommodationplan" required class="form-control" value="Self">Self
+										<input type="radio" name="accommodationplan" required class="form-control" value="Financed">Financed
+                                    </div>
+									
+									
+                                    <div class="form-group">
+                                        <label >Message</label>
+                                        <textarea rows="3" name="message" class="form-control" placeholder="Type Your Message"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <button class="btn btn-raised btn-lg btn-warning" type="submit">Send</button>
+                                    </div>
+                                </form>
+                                <div id="error_message" style="width:100%; height:100%; display:none; ">
+                                    <h4>
+                                        Error
+                                    </h4>
+                                    Sorry there was an error sending your form. 
+                                </div>
+                                <div id="success_message" style="width:100%; height:100%; display:none; ">
+<h2>Success! Your Message was Sent Successfully. please you will be notified later through Your Email address</h2>
+</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+<!-- Mirrored from www.tunawezatz.org/registrationform/registration.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 10 Sep 2025 07:51:38 GMT -->
+</html>

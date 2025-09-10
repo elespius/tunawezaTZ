@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<!-- Mirrored from www.tunawezatz.org/home.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 10 Sep 2025 07:49:47 GMT -->
+<head><!-- Created by Artisteer v4.1.0.59861 -->
+    <meta charset="utf-8">
+    <title>Home</title>
+    <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
+
+    <!--[if lt IE 9]><script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <link rel="stylesheet" href="style.css" media="screen">
+    <!--[if lte IE 7]><link rel="stylesheet" href="style.ie7.css" media="screen" /><![endif]-->
+    <link rel="stylesheet" href="style.responsive.css" media="all">
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Playfair+Display&amp;subset=latin">
+
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+    <script src="script.responsive.js"></script>
+<meta name="description" content="Tunaweza Mwanza Tanzania">
+<meta name="keywords" content="Tunaweza Mwanza Tanzania">
+
+
+
+
+<script>jQuery(function($) {
+    'use strict';
+    if ($.fn.slider) {
+        $(".art-slidecontainerjengo").each(function () {
+            var slideContainer = $(this), tmp;
+            var inner = $(".art-slider-inner", slideContainer);
+            var helper = null;
+
+            if ($.support.transition) {
+                helper = new BackgroundHelper();
+                helper.init("horizontal", "prev", $(".art-slide-item", inner).first().css($.support.transition.prefix + "transition-duration"));
+                inner.children().each(function () {
+                    helper.processSlide($(this), true);
+                });
+
+                var items = helper.items(helper.current(0), helper.next(0));
+                helper.setBackground(inner, items);
+                helper.setPosition(inner, items);
+
+                slideContainer.on("beforeSlide", function () {
+                    var activeItem = $(".active", this),
+                        nextItem = $(".next, .prev", this),
+                        activePos = $(".art-slide-item", this).index(activeItem),
+                        nextPos = $(".art-slide-item", this).index(nextItem);
+
+                    var currentItems = helper.items(helper.current(activePos), helper.current(nextPos));
+
+                    helper.transition(inner, false);
+                    helper.setBackground(inner, currentItems);
+                    helper.setPosition(inner, currentItems);
+                    if (inner.length) {
+                        tmp = inner.get(0).offsetHeight;
+                    }
+
+                    var movedCurrentItems = helper.items(helper.current(activePos), helper.current(nextPos), true);
+                    helper.transition(inner, true);
+                    helper.setPosition(inner, movedCurrentItems);
+                });
+            }
+
+
+            inner.children().eq(0).addClass("active");
+            slideContainer.slider({
+                pause: 2600,
+                speed: 600,
+                repeat: true,
+                animation: "horizontal",
+                direction: "prev",
+                navigator: slideContainer.siblings(".art-slidenavigatorjengo"),
+                helper: helper                
+            });
+        });
+    }
+});
+</script><style>.art-content .art-postcontent-0 .layout-item-0 { border-bottom-style:solid;border-bottom-width:1px;border-bottom-color:#ABC392; padding-right: 10px;padding-left: 10px;  }
+.art-content .art-postcontent-0 .layout-item-1 { border-right-style:solid;border-bottom-style:solid;border-right-width:1px;border-bottom-width:1px;border-right-color:#ABC392;border-bottom-color:#ABC392; padding-right: 10px;padding-left: 10px;  }
+.art-content .art-postcontent-0 .layout-item-2 { padding-right: 10px;padding-left: 10px;  }
+.ie7 .art-post .art-layout-cell {border:none !important; padding:0 !important; }
+.ie6 .art-post .art-layout-cell {border:none !important; padding:0 !important; }
+
+.art-slidecontainerjengo {
+    position: relative;
+        width: 490px;
+    height: 326px;
+        }
+
+.art-slidecontainerjengo .art-slide-item
+{
+
+}
+
+.art-slidecontainerjengo .art-slide-item {
+    -webkit-transition: 600ms ease-in-out left;
+    -moz-transition: 600ms ease-in-out left;
+    -ms-transition: 600ms ease-in-out left;
+    -o-transition: 600ms ease-in-out left;
+    transition: 600ms ease-in-out left;
+    position: relative;
+    display: none;
+    width:  100%;
+    height: 100%;
+}
+
+.art-slidecontainerjengo .active, .art-slidecontainerjengo .next, .art-slidecontainerjengo .prev {
+    display: block;
+}
+
+.art-slidecontainerjengo .active {
+    left: 0;
+}
+
+.art-slidecontainerjengo .next, .art-slidecontainerjengo .prev {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.art-slidecontainerjengo .next {
+    left: 100%;
+}
+
+.art-slidecontainerjengo .prev {
+    left: -100%;
+}
+
+.art-slidecontainerjengo .next.forward, .art-slidecontainerjengo .prev.back {
+    left: 0;
+}
+
+.art-slidecontainerjengo .active.forward {
+    left: -100%;
+}
+
+.art-slidecontainerjengo .active.back {
+    left: 100%;
+}
+
+
+
+
+.art-slidejengo0 {
+    background-image:  url('images/slidejengo0.jpg');
+        background-size:  100%;
+        background-position:  0 0;
+    background-repeat: no-repeat;
+}
+.art-slidejengo1 {
+    background-image:  url('images/slidejengo1.jpg');
+        background-size:  100%;
+        background-position:  0 0;
+    background-repeat: no-repeat;
+}
+.art-slidejengo2 {
+    background-image:  url('images/slidejengo2.jpg');
+        background-size:  100%;
+        background-position:  0 0;
+    background-repeat: no-repeat;
+}
+.art-slidejengo3 {
+    background-image:  url('images/slidejengo3.jpg');
+        background-size:  100%;
+        background-position:  0 0;
+    background-repeat: no-repeat;
+}
+.art-slidejengo4 {
+    background-image:  url('images/slidejengo4.jpg');
+        background-size:  100%;
+        background-position:  0 0;
+    background-repeat: no-repeat;
+}
+.art-slidejengo5 {
+    background-image:  url('images/slidejengo5.jpg');
+        background-size:  100%;
+        background-position:  0 0;
+    background-repeat: no-repeat;
+}
+.art-slidejengo6 {
+    background-image:  url('images/slidejengo6.jpg');
+        background-size:  100%;
+        background-position:  0 0;
+    background-repeat: no-repeat;
+}
+.art-slidejengo7 {
+    background-image:  url('images/slidejengo7.jpg');
+        background-size:  100%;
+        background-position:  0 0;
+    background-repeat: no-repeat;
+}
+.art-slidejengo8 {
+    background-image:  url('images/slidejengo8.jpg');
+        background-size:  100%;
+        background-position:  0 0;
+    background-repeat: no-repeat;
+}
+.art-slidejengo9 {
+    background-image:  url('images/slidejengo9.jpg');
+        background-size:  100%;
+        background-position:  0 0;
+    background-repeat: no-repeat;
+}
+.art-slidejengo10 {
+    background-image:  url('images/slidejengo10.jpg');
+        background-size:  100%;
+        background-position:  0 0;
+    background-repeat: no-repeat;
+}
+
+
+.art-slidenavigatorjengo {
+  display: inline-block;
+  position: absolute;
+  direction: ltr !important;
+  top: 286px;
+  left: 25.51%;
+  z-index: 101;
+  line-height: 0 !important;
+  -webkit-background-origin: border !important;
+  -moz-background-origin: border !important;
+  background-origin: border-box !important;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+    white-space: nowrap;
+    }
+.art-slidenavigatorjengo
+{
+background: #3FC1DE;background: #3FC1DE;background: #3FC1DE;background: #3FC1DE;background: #3FC1DE;background: #3FC1DE;background: #3FC1DE;-svg-background: #3FC1DE;
+-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;
+
+
+padding:15px;
+
+
+
+
+
+}
+.art-slidenavigatorjengo > a
+{
+background: #4F6638;background: #4F6638;background: #4F6638;background: #4F6638;background: #4F6638;background: #4F6638;background: #4F6638;-svg-background: #4F6638;
+-webkit-border-radius:10%;-moz-border-radius:10%;border-radius:10%;
+
+
+
+margin:0 10px 0 0;
+
+width: 10px;
+
+height: 10px;
+}
+.art-slidenavigatorjengo > a.active
+{
+background: #B2B65D;background: #B2B65D;background: #B2B65D;background: #B2B65D;background: #B2B65D;background: #B2B65D;background: #B2B65D;-svg-background: #B2B65D;
+-webkit-border-radius:10%;-moz-border-radius:10%;border-radius:10%;
+
+border:1px solid #787B37;
+
+margin:0 10px 0 0;
+
+width: 10px;
+
+height: 10px;
+}
+.art-slidenavigatorjengo > a:hover
+{
+background: #909442;background: #909442;background: #909442;background: #909442;background: #909442;background: #909442;background: #909442;-svg-background: #909442;
+-webkit-border-radius:10%;-moz-border-radius:10%;border-radius:10%;
+
+border:1px solid #B2B65D;
+
+margin:0 10px 0 0;
+
+width: 10px;
+
+height: 10px;
+}
+
+</style></head>
+<body>
+<div id="art-main">
+<header class="art-header">
+
+
+    <div class="art-shapes">
+
+            </div>
+
+
+
+
+                
+                    
+</header>
+<nav class="art-nav">
+    <ul class="art-hmenu"><li><a href="home.html" class="active">Home</a></li><li><a href="about-us.html">About us</a></li><li><a href="#">News</a><ul><li><a href="news/newsletter.html">Newsletter</a></li><li><a href="news/events.html">Events</a></li><li><a href="news/reports.html">Reports</a></li></ul></li><li><a href="#">Partiners</a><ul><li><a href="partiners/local-cooperation.html">local cooperation</a></li><li><a href="partiners/international-cooperation.html">international cooperation</a></li></ul></li><li><a href="contacts.html">Contacts</a></li><li><a href="donation-and-support.html">Donation and support</a></li><li><a href="shop.html">Shop</a></li><li><a href="volunteerism.html">Volunteerism</a></li></ul> 
+    </nav>
+<div class="art-sheet clearfix">
+            <div class="art-layout-wrapper">
+                <div class="art-content-layout">
+                    <div class="art-content-layout-row">
+                        <div class="art-layout-cell art-sidebar1"><div class="art-block clearfix">
+        <div class="art-blockheader">
+            <h3 class="t"></h3>
+        </div>
+        <div class="art-blockcontent"><p style="text-align: justify;"><img width="165" height="124" alt="" class="art-lightbox" src="images/intro.jpg">TUNAWEZA offers young people with disabilities after their graduation 
+from school or from the age of 14 if a school visit was not possible, 
+the chance to widen their social and true-to-life abilities and to gain 
+vocational skills. The priority is for them to achieve the highest 
+possible degree in self-sufficiency and self-determination.<br></p><p style="text-align: justify;"><img width="169" height="126" alt="" class="art-lightbox" src="images/batic.jpg"><strong>Batik workshop&nbsp;!</strong>&nbsp;Under this department, youngsters with
+ disabilities learn on how to stamp Wax and participate into Batik 
+Production. Different Batiks are produced and they are used in hand 
+porches or bags. Others are used to sew Aprons, women wrapping cloth or 
+Picnic/Outing cloth. Blue Elephant Batik is more popular and 
+differentiates us with others. Those who progress well get a chance to 
+share the Profit.<br></p><p style="text-align: justify;"><img width="165" height="124" alt="" class="art-lightbox" src="images/sewing.jpg"><strong>Sewing room&nbsp;!</strong>&nbsp;Tailoring is one of our Backbones. The 
+Youngsters are trained on how to use the Sewing machines and produce 
+colorful dresses, shirts, Aprons, Toys, different sizes of bags and 
+other items for sale<br></p><p style="text-align: justify;"><img width="169" height="126" alt="" class="art-lightbox" src="images/boardmeeting.jpg"><strong>Board and Parents Meeting&nbsp;!</strong>&nbsp;Four times a year the board
+ meets and parents meet. The third Friday of each December we do conduct
+ Annual general meeting whereby all parents, Students, Staff and members
+ come together for evaluation of all activities have been implemented in
+ a year, to plan and approve the budget in the coming year, to discuss 
+the narrative and financial reports of the activities implemented, Share
+ the experiences and of course have the party by drinking non-alcoholic 
+beverages, eat food together and dance!<br></p></div>
+</div></div>
+                        <div class="art-layout-cell art-content"><article class="art-post art-article">
+                                
+                                                
+                <div class="art-postcontent art-postcontent-0 clearfix"><div class="art-content-layout">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell layout-item-0" style="width: 100%" >
+        <p></p><div id="jengo" style="position: relative; display: inline-block; z-index: 0; margin: 7px;  border-width: 0px;  " class="art-collage">
+<div class="art-slider art-slidecontainerjengo" data-width="490" data-height="326">
+    <div class="art-slider-inner">
+<div class="art-slide-item art-slidejengo0">
+
+</div>
+<div class="art-slide-item art-slidejengo1">
+
+</div>
+<div class="art-slide-item art-slidejengo2">
+
+</div>
+<div class="art-slide-item art-slidejengo3">
+
+</div>
+<div class="art-slide-item art-slidejengo4">
+
+</div>
+<div class="art-slide-item art-slidejengo5">
+
+</div>
+<div class="art-slide-item art-slidejengo6">
+
+</div>
+<div class="art-slide-item art-slidejengo7">
+
+</div>
+<div class="art-slide-item art-slidejengo8">
+
+</div>
+<div class="art-slide-item art-slidejengo9">
+
+</div>
+<div class="art-slide-item art-slidejengo10">
+
+</div>
+
+    </div>
+</div>
+<div class="art-slidenavigator art-slidenavigatorjengo" data-left="25.51">
+<a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a>
+</div>
+
+
+
+    </div>
+
+        
+         
+         
+         
+         
+         
+         
+        <p><br></p>
+    </div>
+    </div>
+</div>
+<div class="art-content-layout">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell layout-item-1" style="width: 50%" >
+        <p><br></p>
+    </div><div class="art-layout-cell layout-item-0" style="width: 50%" >
+        <h3><br></h3>
+    </div>
+    </div>
+</div>
+<div class="art-content-layout">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell layout-item-2" style="width: 100%" >
+        <p><img width="376" height="282" alt="" class="art-lightbox" src="images/ecological.jpg" style="margin-left: 50px; "><br></p><p style="text-align: justify;"><strong>Ecological gardening, landscape management and Poultry keeping&nbsp;!</strong>&nbsp;In
+         the Gardening they are also taught all gardening works especially 
+         horticulture and how to grow medicinal plants like Lemon grasses and 
+         Hibiscus ( Both for herbal Tea) While Artemisia and Moringa for cure and
+         Treatment of Malaria, The Aloe Vera for wounds treatment and Dry . 
+         Vegetables are grown for sale and to eat at lunchtime. Local Chicken and
+         Eggs are eaten as a good source of Proteins and they are sold to 
+         provide income for the Centre Activities.<br></p><p><img width="376" height="282" alt="" class="art-lightbox" src="images/domestic.jpg" style="margin-left: 50px; "><br></p><p style="text-align: justify;"><strong>Domestic economy and kitchen&nbsp;!</strong>&nbsp;In the kitchen the 
+         Students learn on how to prepare different cuisines and they learn food 
+         hygiene, Food security and proper use of Kitchen utensils. The kitchen 
+         team prepares breakfast and lunch for the whole center. Those who have 
+         gained enough experience are supported in finding employment in small 
+         and medium sized labor market and others are supported to start their 
+         own small businesses.<br></p><p><br></p><p><strong>Contacts</strong></p>
+        <p>Tunaweza Mwanza,<br>Location: Pasiansi-Papa Street Block ‘A’#66 - Mwanza Tanzania<br>Address: P.O. Box 10263, Mwanza-Tanzania:<br>Phone: +255 783386879</p>
+        <p>Email:info@tunawezatz.org or <a href="mailto:tunweza.mwanza@yahoo.com">tunweza.mwanza@yahoo.com</a> or <a href="mailto:tunaweza.mza@gmail.com">tunaweza.mza@gmail.com</a></p><p><br></p>
+    </div>
+    </div>
+</div>
+</div>
+
+
+</article></div>
+                        <div class="art-layout-cell art-sidebar2"><div class="art-block clearfix">
+        <div class="art-blockheader">
+            <h3 class="t"></h3>
+        </div>
+        <div class="art-blockcontent"><p style="text-align: justify;"><img width="169" height="126" alt="" class="art-lightbox" src="images/paperworkshop.jpg"><strong>Paper workshop&nbsp;!</strong>&nbsp;In this department Youngsters with 
+disabilities learn on how to recycle papers from fresh leaves like 
+bamboo stem, maize and onion leaves, Papyrus and from waste papers. The 
+final products from this department is production of lovely different 
+design of cards and Calendars<br></p><p style="text-align: justify;"><img width="165" height="124" alt="" class="art-lightbox" src="images/jewerlymanufacturing.jpg"><strong>Jewelry manufacturing!</strong>This department deals with design
+ and production of all ornaments and other bead materials like Key 
+holders, Necklaces, Bangle wire with beads earrings, Chains, Necklaces 
+and Fridge magnetic ornaments.<br></p><p style="text-align: justify;"><img width="169" height="126" alt="" class="art-lightbox" src="images/sociallife.jpg"><strong>Social, life and sign language kills&nbsp;!</strong>&nbsp;Hence some of 
+our trainees are deaf, we once a week do provide Tanzanian Sign language
+ class for free. Parents and everybody who wants to widen his or her 
+skills in sign language in order to communicate with deaf people as well
+ as other community member are invited to join the Class. They also 
+learn other social and life skills like how to use public transport 
+e.t.c<br></p><p style="text-align: justify;"><br></p><p style="text-align: justify;"><span style="font-weight: bold;">Find us on Social Media</span></p><p style="text-align: justify;"><a href="https://www.facebook.com/tunaweza-mwanza-1380476892066942/" target="_blank"><img width="50" height="50" alt="" src="images/facebook.png" class=""></a>&nbsp;<a href="https://www.tunawezatz.org:2096/cpsess3510174294/webmail/paper_lantern/index.html?login=1&amp;post_login=66288587705637" target="_blank"><img width="100" height="39" alt="" src="images/Webmail-app.png" class=""></a><br></p></div>
+</div></div>
+                    </div>
+                </div>
+            </div><footer class="art-footer">
+<p>Copyright © 2018, Tunaweza Mwanza. All Rights Reserved.</p>
+</footer>
+
+    </div>
+</div>
+
+
+</body>
+<!-- Mirrored from www.tunawezatz.org/home.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 10 Sep 2025 07:49:47 GMT -->
+</html>
